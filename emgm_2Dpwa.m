@@ -76,7 +76,7 @@ d=n+2*rand(size(n));
 % C=10*rand(size(m));
 % d=10*rand(size(n));
 
-maxErr=1e-2;
+maxErr=1e-4;
 
 %% EM Algo
 OldclusterSize=zeros(1,M);
@@ -114,3 +114,6 @@ for emInd=1:emMaxIter
     end
     OldclusterSize=clusterSize;
 end
+
+reshape(m,size(m,1),size(m,3))
+reshape(C,size(C,1),size(C,3))
