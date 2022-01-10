@@ -16,8 +16,6 @@ function plot_responsibles(x, y, responsabilities, C, d,colors)
   %     surf(X1,X2,Z,CO,'LineStyle',':')
   % end
 
-
-
   for i=1:M
     z_i=find(z_hat==i);
     scatter3(x(1,z_i),x(2,z_i),y(z_i),10,colors{i})
